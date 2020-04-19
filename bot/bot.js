@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const auth = require('./auth.json');
 
 const npcCommand = "!npc ";
-const helpCommand = "!help";
+const helpCommand = "!npc_help";
 
 const textArgument = "!text ";
 
@@ -12,7 +12,8 @@ const npcResponsePrefix = "\n**[NPC] ";
 const npcResponseSuffix = "**\n";
 
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setActivity('Type ' + helpCommand, { type: 'PLAYING' })
+    console.log('Logged in as ${client.user.tag}!');
 });
 
 client.on('message', msg => {
