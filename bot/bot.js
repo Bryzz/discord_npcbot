@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const auth = require('./auth.json');
-
 const npcCommand = "!npc ";
 const helpCommand = "!npc_help";
 
