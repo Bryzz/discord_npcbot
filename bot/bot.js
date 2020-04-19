@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const auth = require('./auth.json');
+
 const npcCommand = "!npc ";
 const helpCommand = "!help";
 
@@ -50,4 +52,4 @@ client.on('message', msg => {
     }
 });
 
-client.login('<BOT TOKEN>');
+client.login(auth.token);
