@@ -1,8 +1,0 @@
-{
-	"name": "npcbot",
-	"version": "0.1",
-	"description": "A bot that allows to create NPC Messages !",
-	"main": "bot.js",
-	"author": "Bryzz",
-	"dependencies": {}
-}

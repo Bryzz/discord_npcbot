@@ -4,5 +4,11 @@
 	"description": "A bot that allows to create NPC Messages !",
 	"main": "bot/bot.js",
 	"author": "Bryzz",
-	"dependencies": {}
+	"scripts": {
+    	"start": "node bot/bot.js"
+	},
+	"dependencies": {
+		"discord.js": "11.1.0",
+		"request": "2.81.0"
+	}
 }
