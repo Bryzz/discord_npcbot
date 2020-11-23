@@ -21,7 +21,7 @@ client.on('message', msg => {
 
     // Si la commande commence par "!HELP", on indique le message d'aide
     if (msgContentNoLinebreak.toLowerCase().startsWith(helpCommand)) {
-        msg.reply("You can use the following example :\n```!npc Dragon !text \"Hello there, little adventurer !\" exclaimed the beast. \"What are you doing inside my cave ?\"```");
+        msg.reply("You can use the following example :\n```!npc Dragon !text \"Hello there, little adventurer !\" exclaimed the beast. \"What are you doing inside my cave ?\"```\nOr basically this.\n```!npc <NAME> !text <MESSAGE>```");
         return;
     }
 
